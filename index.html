@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>It's Time To Pack</title>
+  <meta name="description" content="Simple packing checklist — ItsTimeToPack" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="app" id="app">
+    <header>
+      <div class="title">
+        <h1 class="list-name" id="listName">Packing — Loading...</h1>
+        <div class="subtitle">Choose a list, tick items. Your checks are saved to this browser.</div>
+      </div>
+
+      <div class="controls">
+        <label for="listSelect" class="visually-hidden">Choose packing list</label>
+        <select id="listSelect" aria-label="Choose packing list"></select>
+      </div>
+    </header>
+
+    <div class="meta-row">
+      <div id="metaCounts" aria-live="polite"></div>
+    </div>
+
+    <section class="list-area" id="listArea" aria-live="polite">
+      <!-- items render here -->
+    </section>
+
+    <div class="add-bar" aria-label="Add a custom item">
+      <input type="text" id="newItemName" placeholder="Add a new item (e.g. 'Sunglasses')" />
+      <input type="text" id="newItemCategory" placeholder="Category (optional)" />
+      <button id="addItemBtn" class="btn">Add</button>
+    </div>
+
+    <footer>
+      Tip: This prototype stores your checks and custom items locally in your browser (private to this computer). To sync across devices we'll add accounts later.
+    </footer>
+
+    <!-- embedded sample JSON fallback (optional) -->
+    <script id="embedded-data" type="application/json">
+{
+  "meta": {
+    "version": "0.1",
+    "lastUpdated": "2026-02-02",
+    "lists": [
+      "hiking_summer",
+      "hiking_winter",
+      "trip_to_parents"
+    ],
+    "seasons": ["summer","winter"]
+  },
+  "items": [
+    {"id":"passport","name":"Passport","category":"Documents","lists":{"hiking_summer":false,"hiking_winter":false,"trip_to_parents":true},"seasons":["summer","winter"],"essential":true},
+    {"id":"wallet","name":"Wallet","category":"Documents","lists":{"hiking_summer":true,"hiking_winter":true,"trip_to_parents":true},"seasons":["summer","winter"],"essential":true},
+    {"id":"hiking_boots","name":"Hiking boots","category":"Footwear","lists":{"hiking_summer":true,"hiking_winter":true,"trip_to_parents":false},"seasons":["summer","winter"],"essential":true},
+    {"id":"phone_charger","name":"Phone charger","category":"Tech","lists":{"hiking_summer":true,"hiking_winter":true,"trip_to_parents":true},"seasons":["summer","winter"],"essential":true},
+    {"id":"toothbrush","name":"Toothbrush","category":"Toiletries","lists":{"hiking_summer":true,"hiking_winter":true,"trip_to_parents":true},"seasons":["summer","winter"],"essential":true}
+  ]
+}
+    </script>
+  </main>
+</body>
+</html>
