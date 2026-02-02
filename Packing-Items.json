@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "version": "0.1",
+    "lastUpdated": "2026-02-02",
+    "lists": [
+      "hiking_summer",
+      "hiking_winter",
+      "trip_to_parents"
+    ],
+    "seasons": ["summer", "winter"]
+  },
+  "items": [
+    {
+      "id": "passport",
+      "name": "Passport",
+      "category": "Documents",
+      "lists": {
+        "hiking_summer": false,
+        "hiking_winter": false,
+        "trip_to_parents": true
+      },
+      "seasons": ["summer", "winter"],
+      "essential": true
+    },
+    {
+      "id": "wallet",
+      "name": "Wallet",
+      "category": "Documents",
+      "lists": {
+        "hiking_summer": true,
+        "hiking_winter": true,
+        "trip_to_parents": true
+      },
+      "seasons": ["summer", "winter"],
+      "essential": true
+    },
+    {
+      "id": "hiking_boots",
+      "name": "Hiking boots",
+      "category": "Footwear",
+      "lists": {
+        "hiking_summer": true,
+        "hiking_winter": true,
+        "trip_to_parents": false
+      },
+      "seasons": ["summer", "winter"],
+      "essential": true
+    },
+    {
+      "id": "running_shoes",
+      "name": "Running shoes",
+      "category": "Footwear",
+      "lists": {
+        "hiking_summer": true,
+        "hiking_winter": false,
+        "trip_to_parents": true
+      },
+      "seasons": ["summer"],
+      "essential": false
+    },
+    {
+      "id": "waterproof_jacket",
+      "name": "Waterproof jacket",
+      "category": "Clothing",
+      "lists": {
+        "hiking_summer": true,
+        "hiking_winter": true,
+        "trip_to_parents": false
+      },
+      "seasons": ["summer", "winter"],
+      "essential": true
+    },
+    {
+      "id": "warm_hat",
+      "name": "Warm hat",
+      "category": "Clothing",
+      "lists": {
+        "hiking_summer": false,
+        "hiking_winter": true,
+        "trip_to_parents": false
+      },
+      "seasons": ["winter"],
+      "essential": false
+    },
+    {
+      "id": "phone_charger",
+      "name": "Phone charger",
+      "category": "Tech",
+      "lists": {
+        "hiking_summer": true,
+        "hiking_winter": true,
+        "trip_to_parents": true
+      },
+      "seasons": ["summer", "winter"],
+      "essential": true
+    },
+    {
+      "id": "toothbrush",
+      "name": "Toothbrush",
+      "category": "Toiletries",
+      "lists": {
+        "hiking_summer": true,
+        "hiking_winter": true,
+        "trip_to_parents": true
+      },
+      "seasons": ["summer", "winter"],
+      "essential": true
+    },
+    {
+      "id": "book",
+      "name": "Book / Kindle",
+      "category": "Extras",
+      "lists": {
+        "hiking_summer": false,
+        "hiking_winter": false,
+        "trip_to_parents": true
+      },
+      "seasons": ["summer", "winter"],
+      "essential": false
+    }
+  ]
+}
